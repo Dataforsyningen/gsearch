@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>3.2.3</version>
+    <version>3.2.4</version>
     <relativePath/>
     <!-- lookup parent from repository -->
   </parent>
@@ -16,7 +16,7 @@
   <description>Gsearch</description>
   <properties>
     <java.version>21</java.version>
-    <org.jdbi.version>3.45.0</org.jdbi.version>
+    <org.jdbi.version>3.45.1</org.jdbi.version>
   </properties>
   <dependencies>
     <dependency>
@@ -60,7 +60,7 @@
     <dependency>
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
-      <version>42.7.2</version>
+      <version>42.7.3</version>
     </dependency>
     <dependency>
       <groupId>net.postgis</groupId>
@@ -75,17 +75,17 @@
     <dependency>
       <groupId>org.geotools.jdbc</groupId>
       <artifactId>gt-jdbc-postgis</artifactId>
-      <version>30.1</version>
+      <version>31.0</version>
     </dependency>
     <dependency>
       <groupId>org.geotools</groupId>
       <artifactId>gt-cql</artifactId>
-      <version>30.1</version>
+      <version>31.0</version>
     </dependency>
     <dependency>
       <groupId>org.geotools</groupId>
       <artifactId>gt-epsg-wkt</artifactId>
-      <version>30.1</version>
+      <version>31.0</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
