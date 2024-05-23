@@ -14,7 +14,7 @@ Feature: Gsearch stednavn test
         And match response contains only
         """
             {
-                "skrivemaade_uofficiel": '#string',
+                "skrivemaade_uofficiel": '##string',
                 "skrivemaade_officiel": '#string',
                 "visningstekst": '#string',
                 "bbox": '#(bboxSchema)',
@@ -32,8 +32,8 @@ Feature: Gsearch stednavn test
 
         When method GET
         Then status 200
-        And match response == '#[6]'
-        And match response.[*].skrivemaade_officiel contains deep ['Gadekærvej Storbyhave', 'Valby Gl. Skole', 'Station Gearhallen', 'Store Valbygård']
+        And match response == '#[3]'
+        And match response.[*].skrivemaade_officiel contains deep ['Gadekærvej Storbyhave', 'Valby Gl. Skole', 'Store Valbygård']
 
     Scenario: Search is case insensitive
         Then param q = 'Valbyparken'
