@@ -12,7 +12,7 @@ WITH agg_stednavne_officiel AS (
 agg_stednavne_uofficiel AS (
     SELECT
         objectid,
-        string_agg(skrivemaade, ';') AS skrivemaader
+        string_agg(skrivemaade, ',') AS skrivemaader
     FROM
         stednavne_udstilling.stednavne_udstilling u
     WHERE
