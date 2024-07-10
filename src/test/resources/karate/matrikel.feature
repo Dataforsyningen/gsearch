@@ -91,7 +91,7 @@ Feature: Gsearch matrikel test
         When method GET
         Then status 200
         And def firstresponse = response
-        And match firstresponse == '#[6]'
+        And match firstresponse == '#[7]'
 
         Then param q = '4a 401954 staurby'
 
