@@ -32,7 +32,7 @@ Feature: Gsearch stednavn test
 
         When method GET
         Then status 200
-        And match response == '#[3]'
+        And match response == '#[6]'
         And match response.[*].skrivemaade_officiel contains deep ['Gadekærvej Storbyhave', 'Valby Gl. Skole', 'Store Valbygård']
 
     Scenario: Search is case insensitive
