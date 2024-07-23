@@ -98,7 +98,7 @@ Feature: Gsearch matrikel test
         When method GET
         Then status 200
         And def secondresponse = response
-        And match secondresponse == '#[6]'
+        And match secondresponse == '#[7]'
 
         Then match firstresponse == secondresponse
 
@@ -107,7 +107,7 @@ Feature: Gsearch matrikel test
         When method GET
         Then status 200
         And def thirdresponse = response
-        And match thirdresponse == '#[6]'
+        And match thirdresponse == '#[7]'
 
         Then match thirdresponse == secondresponse
 
