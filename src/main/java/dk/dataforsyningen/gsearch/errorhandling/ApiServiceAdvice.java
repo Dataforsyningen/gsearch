@@ -205,6 +205,16 @@ public class ApiServiceAdvice extends ResponseEntityExceptionHandler {
         return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
     }
 
+    @ExceptionHandler(UnknownHostException.class)
+    public ResponseEntity<ErrorResponse> handleUnknownHostException(
+            UnknownHostException exception) {
+        String exceptionCause = getRootCause(exception).toString();
+        ErrorResponse errorResponse = new ErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR, "UnknownHostException", "Host not found");
+        logger.info(ERROR_STRING, exception);
+        logger.info(ERROR_STRING + exceptionCause);
+        return new ResponseEntity<>(errorResponse, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+
     @ExceptionHandler(ResultSetException.class)
     public ResponseEntity<ErrorResponse> handleResultSetException(
         ResultSetException exception) {
