@@ -2,6 +2,7 @@ package dk.dataforsyningen.gsearch.errorhandling;
 
 import jakarta.validation.ConstraintViolationException;
 
+import java.net.UnknownHostException;
 import java.sql.SQLNonTransientConnectionException;
 import java.util.ArrayList;
 import java.util.List;
