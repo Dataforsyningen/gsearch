@@ -65,7 +65,7 @@
     <dependency>
       <groupId>net.postgis</groupId>
       <artifactId>postgis-jdbc-jts</artifactId>
-      <version>2023.1.0</version>
+      <version>2024.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.n52.jackson</groupId>
