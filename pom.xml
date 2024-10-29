@@ -16,7 +16,7 @@
   <description>Gsearch</description>
   <properties>
     <java.version>21</java.version>
-    <org.jdbi.version>3.45.2</org.jdbi.version>
+    <org.jdbi.version>3.47.0</org.jdbi.version>
   </properties>
   <dependencies>
     <dependency>
