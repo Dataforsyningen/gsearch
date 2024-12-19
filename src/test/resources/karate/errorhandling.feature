@@ -34,7 +34,7 @@ Feature: Gsearch errorhandling test
     }
     """
 
-  Scenario: Not exiting resource
+  Scenario: Non existing resource
     Then url url + '/postnummer1'
     Then param q = 's'
     When method GET
